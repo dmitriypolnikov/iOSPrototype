@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		844ED7032061F26400D049E9 /* zero.wav in Resources */ = {isa = PBXBuildFile; fileRef = 844ED7012061F26300D049E9 /* zero.wav */; };
+		844ED7042061F26400D049E9 /* BackgroundTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844ED7022061F26400D049E9 /* BackgroundTask.swift */; };
+		C508E2EF1FC14AE900442EAE /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = C508E2EE1FC14AE900442EAE /* Hero.swift */; };
 		C54C73EF1FC0872D00F1531B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54C73EE1FC0872D00F1531B /* AppDelegate.swift */; };
 		C54C73F11FC0872D00F1531B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54C73F01FC0872D00F1531B /* ViewController.swift */; };
 		C54C73F41FC0872D00F1531B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C54C73F21FC0872D00F1531B /* Main.storyboard */; };
@@ -34,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		844ED7012061F26300D049E9 /* zero.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = zero.wav; sourceTree = "<group>"; };
+		844ED7022061F26400D049E9 /* BackgroundTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundTask.swift; sourceTree = "<group>"; };
+		C508E2EE1FC14AE900442EAE /* Hero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
 		C54C73EB1FC0872D00F1531B /* SwiftExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C54C73EE1FC0872D00F1531B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C54C73F01FC0872D00F1531B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -97,12 +103,15 @@
 		C54C73ED1FC0872D00F1531B /* SwiftExample */ = {
 			isa = PBXGroup;
 			children = (
+				844ED7022061F26400D049E9 /* BackgroundTask.swift */,
+				844ED7012061F26300D049E9 /* zero.wav */,
 				C54C73EE1FC0872D00F1531B /* AppDelegate.swift */,
 				C54C73F01FC0872D00F1531B /* ViewController.swift */,
 				C54C73F21FC0872D00F1531B /* Main.storyboard */,
 				C54C73F51FC0872D00F1531B /* Assets.xcassets */,
 				C54C73F71FC0872D00F1531B /* LaunchScreen.storyboard */,
 				C54C73FA1FC0872D00F1531B /* Info.plist */,
+				C508E2EE1FC14AE900442EAE /* Hero.swift */,
 			);
 			path = SwiftExample;
 			sourceTree = "<group>";
@@ -193,7 +202,12 @@
 				TargetAttributes = {
 					C54C73EA1FC0872D00F1531B = {
 						CreatedOnToolsVersion = 9.1;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					C54C73FE1FC0872E00F1531B = {
 						CreatedOnToolsVersion = 9.1;
@@ -232,6 +246,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				844ED7032061F26400D049E9 /* zero.wav in Resources */,
 				C54C73F91FC0872D00F1531B /* LaunchScreen.storyboard in Resources */,
 				C54C73F61FC0872D00F1531B /* Assets.xcassets in Resources */,
 				C54C73F41FC0872D00F1531B /* Main.storyboard in Resources */,
@@ -261,6 +276,8 @@
 			files = (
 				C54C73F11FC0872D00F1531B /* ViewController.swift in Sources */,
 				C54C73EF1FC0872D00F1531B /* AppDelegate.swift in Sources */,
+				844ED7042061F26400D049E9 /* BackgroundTask.swift in Sources */,
+				C508E2EF1FC14AE900442EAE /* Hero.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,9 +361,11 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: WESHINE MOMENTS SDN BHD (73R693HUFV)";
+				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 73R693HUFV;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -366,6 +385,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "29612c6c-9994-4291-9604-cc52c7717afc";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -401,9 +421,11 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: WESHINE MOMENTS SDN BHD (73R693HUFV)";
+				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 73R693HUFV;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -416,6 +438,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "29612c6c-9994-4291-9604-cc52c7717afc";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
@@ -426,11 +449,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: WESHINE MOMENTS SDN BHD (73R693HUFV)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: WESHINE MOMENTS SDN BHD (73R693HUFV)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 73R693HUFV;
 				INFOPLIST_FILE = SwiftExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = simplifiedios.SwiftExample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.anton.bgmonitor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "29612c6c-9994-4291-9604-cc52c7717afc";
+				PROVISIONING_PROFILE_SPECIFIER = moDist;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -440,11 +468,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: WESHINE MOMENTS SDN BHD (73R693HUFV)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: WESHINE MOMENTS SDN BHD (73R693HUFV)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 73R693HUFV;
 				INFOPLIST_FILE = SwiftExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = simplifiedios.SwiftExample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.anton.bgmonitor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "29612c6c-9994-4291-9604-cc52c7717afc";
+				PROVISIONING_PROFILE_SPECIFIER = moDist;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
